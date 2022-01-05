@@ -39,7 +39,7 @@ if($action == "addProduct"){
     }
 
 }elseif($action == "deleteProduct"){
-    $id = $_GET['id'];
+    $id = checkData($connect, $_GET['id']);
 
     $res = deleteProduct($connect, $id);
 
